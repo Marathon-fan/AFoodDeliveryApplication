@@ -27,13 +27,14 @@ For the sake of simplicity, the data store and logic here are omitted.
 For the sake of simplicity, the data store and logic here are omitted.
 
 
-## 4 RESTful State diagram(some parts are simplified to focus on xxx)
+## 4 RESTful State diagram(some parts are simplified to focus on the main logic)
 * GET  
 Get a representation of the resource
 * POST  
 Create a new resource. For instance, when we order food, we use POST
 * PUT
 Replace the state of a resouce.
+
 ![restaurant order and payment](https://cloud.githubusercontent.com/assets/17025949/25528059/1b4042ac-2c5f-11e7-9db6-3ee56c450916.jpg)
 
 
