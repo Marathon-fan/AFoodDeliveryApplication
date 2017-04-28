@@ -15,6 +15,16 @@ User then needs to pay for his/her order by providing credit card number, expira
 After payment is made successfully, it should return payment ID, timestamp and then the order is considered as completed so the user can see the estimated delivery time.
 
 ## 3 microservices
+* microservices1 -- Customer Order(menu, make order)
+User can see menu and order food.
+* microservices2 -- Payment
+Finish the payment.
+* microservices3 -- Delivery
+Prepare food and deliver food. Since this process(microservices3) is often slower than microservices1(customer order process)(for instance, when we order pizza, we always need to wait for pizza to be baked in the oven and delivered. In the peak hour, the deliver staff will be very busy),  we use a message queue to decouple and asynchronize them.
+* microservices4 -- Restaurant Discovery(find and show all the restaurants) 
+For the sake of simplicity, the data store and logic here are omitted.
+* microservices5 -- User(registration and login, logout)
+For the sake of simplicity, the data store and logic here are omitted.
 
 
 ## 4 RESTful State diagram(some parts are simplified to focus on xxx)
