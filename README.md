@@ -18,5 +18,7 @@ After payment is made successfully, it should return payment ID, timestamp and t
 
 
 ## 4 RESTful State diagram(some parts are simplified to focus on xxx)
+![restaurant order and payment](https://cloud.githubusercontent.com/assets/17025949/25528059/1b4042ac-2c5f-11e7-9db6-3ee56c450916.jpg)
+
 
 
