@@ -28,6 +28,13 @@ For the sake of simplicity, the data store and logic here are omitted.
 
 
 ## 4 RESTful State diagram(some parts are simplified to focus on the main logic)
+
+|   |   |      |   |   |
+|---|---|------|---|---|
+|   |   |      |   |   |
+|   |   |      |   |   |
+|   |   | fdsf |   |   |
+
 * GET  
 Get a representation of the resource
 * POST  
