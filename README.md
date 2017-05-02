@@ -31,10 +31,16 @@ For the sake of simplicity, the data store and logic here are omitted.
 
 * microservices1 -- Customer Order(menu, make order)  
 
-| microservice1 resources | GET read                      |                 POST create                | PUT update                    | DELETE delete                |
-|-------------------------|-------------------------------|:------------------------------------------:|-------------------------------|------------------------------|
-| /Rests                  | Returns a list of Restaurant  |                                            |                               |                              |
-| /Rests/RestId           | Returns a specific Restaurant | Create/update a new Restaurant(idempotent) | Updates a specific Restaurant | Delete a specific Restaurant |
+| microservice1 resources          | GET (read)                                      |                POST (create)               | PUT (update)                                                                                     | DELETE (delete)              |
+|----------------------------------|-------------------------------------------------|:------------------------------------------:|--------------------------------------------------------------------------------------------------|------------------------------|
+| /Rests                           | Returns a list of Restaurant                    |                                            |                                                                                                  |                              |
+| /Rests/RestId                    | Returns a specific Restaurant                   | Create/update a new Restaurant(idempotent) | Updates a specific Restaurant                                                                    | Delete a specific Restaurant |
+| /Rests/RestId/MenuList           | Returns this restaurant's menu                  |                                            |                                                                                                  |                              |
+| /Rests/RestId/FoodDetails        | Returns this restaurant's all food details      |                                            |                                                                                                  |                              |
+| /Rests/RestId/FoodDetails/FoodId | Returns this restaurant's specific food details | Create/update a new food with detail       | Updates specific food                                                                            | Delete specific food         |
+| /Rests/RestId/Orders/            | Returns this restaurant's all orders            |                                            |                                                                                                  |                              |
+| /Rests/RestId/Orders/OrderId     | Returns this restaurant's specific order        | Create/update a new order                  | Update this order's state 0) unpaid  1) paid_undelivered 2) delivering 3) delivered 4) cancelled | Delete an order              |
+|                                  |                                                 |                                            |                                                                                                  |                              |
 
 * GET  
 Get a representation of the resource
