@@ -41,13 +41,14 @@ For the sake of simplicity, the data store and logic here are omitted.
 | /Rests/RestId/Orders/            | Returns this restaurant's all orders            |                                            |                                                                                                  |                              |
 | /Rests/RestId/Orders/OrderId     | Returns this restaurant's specific order        | Create/update a new order                  | Update this order's state 0) unpaid  1) paid_undelivered 2) delivering 3) delivered 4) cancelled | Delete an order              |
 |                                  |                                                 |                                            |                                                                                                  |                              |
+* microservices2 -- Payment 
 
-* GET  
-Get a representation of the resource
-* POST  
-Create a new resource. For instance, when we order food, we use POST
-* PUT
-Replace the state of a resouce.
+| microservice2 resources | GET (read)                 |       POST (create)       | PUT (update)                                                                     | DELETE (delete)           |
+|-------------------------|----------------------------|:-------------------------:|----------------------------------------------------------------------------------|---------------------------|
+| /payments               | Returns a list of payments |                           |                                                                                  |                           |
+| /payments/paymentId     | Returns a specific payment | Create a specific payment | Update this payment's state 0) payment success,1) payment failure 2) other state | Delete a specific payment |
+
+
 
 ![restaurant order and payment](https://cloud.githubusercontent.com/assets/17025949/25528059/1b4042ac-2c5f-11e7-9db6-3ee56c450916.jpg)
 
