@@ -46,7 +46,7 @@ For the sake of simplicity, the data store and logic here are omitted.
 | microservice2 resources | GET (read)                 |       POST (create)       | PUT (update)                                                                     | DELETE (delete)           |
 |-------------------------|----------------------------|:-------------------------:|----------------------------------------------------------------------------------|---------------------------|
 | /payments               | Returns a list of payments |                           |                                                                                  |                           |
-| /payments/paymentId     | Returns a specific payment | Create a specific payment | Update this payment's state 0) payment success,1) payment failure 2) other state | Delete a specific payment |
+| /payments/paymentId     | Returns a specific payment | Create a specific payment | Update this payment's state 0) PAYMENT_SUCCESS,1) PAYMENT_FAILURE 2) OTHER_STATE | Delete a specific payment |
 
 
 
