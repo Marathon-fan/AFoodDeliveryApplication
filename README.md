@@ -39,7 +39,7 @@ For the sake of simplicity, the data store and logic here are omitted.
 | /Rests/RestId/FoodDetails        | Returns this restaurant's all food details      |                                            |                                                                                                  |                              |
 | /Rests/RestId/FoodDetails/FoodId | Returns this restaurant's specific food details | Create/update a new food with detail       | Updates specific food                                                                            | Delete specific food         |
 | /Rests/RestId/Orders/            | Returns this restaurant's all orders            |                                            |                                                                                                  |                              |
-| /Rests/RestId/Orders/OrderId     | Returns this restaurant's specific order        | Create/update a new order                  | Update this order's state 0) unpaid  1) paid_undelivered 2) delivering 3) delivered 4) cancelled | Delete an order              |
+| /Rests/RestId/Orders/OrderId     | Returns this restaurant's specific order        | Create/update a new order                  | Update this order's state 0) UNPAID  1) PAID_UNDELIVERED 2) DELIVERING 3) DELIVERED 4) CANCELLED | Delete an order              |
 |                                  |                                                 |                                            |                                                                                                  |                              |
 * microservices2 -- Payment 
 
