@@ -58,6 +58,12 @@ For the sake of simplicity, the data store and logic here are omitted.
 | /delivery/deliveryProcesses/v1 | Returns a list of delivery processes |  |  |  |
 | /delivery/deliveryProcesses/v1/deliveryId | Returns a specific delivery process | Create a specific delivery process | Update this delivery process' state 0) PREPARING, 1) ON_GOING 2) FINISHED 3) OTHER STATE |  |
 
+* microservices4 -- Restaurant Discovery(find and show all the restaurants)
+For the sake of simplicity, the data store and logic here are omitted.
+
+* microservices5 -- User(registration and login, logout)
+For the sake of simplicity, the data store and logic here are omitted.
+
 ![restaurant order and payment](https://cloud.githubusercontent.com/assets/17025949/25528059/1b4042ac-2c5f-11e7-9db6-3ee56c450916.jpg)
 
 
