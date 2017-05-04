@@ -102,5 +102,5 @@ _Mongo DB_
 _Spring Cloud and Netflix's Eureka_
 
 ## x Microservice fault tolerance
-_hystrix_
+_hystrix(circuit breaker)_
 
