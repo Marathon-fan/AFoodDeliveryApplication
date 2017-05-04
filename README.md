@@ -1,5 +1,5 @@
 # AFoodDeliveryApplication
-A Food Delivery Application(with Microservices, Spring Cloud, RabbitMQ, NoSQL, SQL)
+A Food Delivery Application(with Microservices, RESTful, Spring Cloud, RabbitMQ, NoSQL, SQL)
 
 ## 1 Change Log
 Version 1.0 released on 28th March 2017.
