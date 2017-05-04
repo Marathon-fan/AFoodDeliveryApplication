@@ -71,7 +71,7 @@ For the sake of simplicity, we don't list the RESTful States for microservices5.
 
 ## 5 Microservices calling each other
 
-__(only critical calls are listed here. You can also see how we handle payment failure here)__ 
+_(only critical calls are listed here. You can also see how we handle payment failure here)_ 
 * microservices1(Customer Order) calling other microservices 
 
 1. Once an order is created, microservices1 will call microservices2(Payment) to finish the corresponding payment
