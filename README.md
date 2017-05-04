@@ -1,5 +1,5 @@
 # AFoodDeliveryApplication
-A Food Delivery Application(with Microservices, RESTful, Spring Cloud, RabbitMQ, NoSQL, SQL)
+A Food Delivery Application(with Microservices, RESTful, Spring Cloud, RabbitMQ, NoSQL(MongoDB), SQL, Eureka, Hystrix)
 
 ## 1 Change Log
 Version 1.0 released on 28th March 2017.
@@ -91,3 +91,11 @@ To make it simple, we don't list microservices4's calling other microservices.
 * microservices5 -- User(registration and login, logout)
 
 To make it simple, we don't list microservices5's calling other microservices.
+
+## x Microservice Registration and Discovery
+
+_Spring Cloud and Netflix's Eureka_
+
+## x Microservice fault tolerance
+_hystrix_
+
