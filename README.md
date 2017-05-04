@@ -79,7 +79,7 @@ _(only critical calls are listed here. You can also see how we handle payment fa
 * microservices2(Payment) calling other microservices 
 
 1. Once a payment is successful, microservices2 will call microservices3(Delivery) to prepare food and deliver it. Also, microservices2 will call microservices3(Delivery) to generate an estimated delivery time so that the customer knows how long possibly will be needed for the delivery process.  
-2. Once a payment is failed, microservices2 will call microservices1(Customer Order) to to handle payment error case. Here to make it simple, we change original OrderId's state to 'CANCELLED'.(In practice, we may relaunch a payment logic)
+2. Once a payment is failed, microservices2 will call microservices1(Customer Order) to to handle payment error case. Here to make it simple, we change original OrderId's state to 'CANCELLED'.(In practice, we may relaunch a payment logic or use other business logic, though )
 
 * microservices3(Delivery) calling other microservices 
 1. Once a delivery process is finished, microservices3(Delivery) will call microservices1(Customer Order) to update the original order's state to 'DELIVERED'.
