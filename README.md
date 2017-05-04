@@ -48,7 +48,14 @@ For the sake of simplicity, the data store and logic here are omitted.
 | /payments               | Returns a list of payments |                           |                                                                                  |                           |
 | /payments/paymentId     | Returns a specific payment | Create a specific payment | Update this payment's state 0) PAYMENT_SUCCESS,1) PAYMENT_FAILURE 2) OTHER_STATE | Delete a specific payment |
 
-
+* microservices3 -- Delivery   
+| microservice3 resources | GET  | POST | PUT  | DELETE (delete) |
+|-----------------------------------------------|--------------------------------------------|:----------------------------------:|------------------------------------------------------------------------------------------|-------------------------------------------|
+| /delivery/estimatedDeliveryTime/v1 | Returns a list of estimated delivery time |  |  |  |
+| /delivery/estimatedDeliveryTime/v1/deliveryId | Returns a specific estimated delivery Time | Create a specific payment |  | Delete a specific estimated delivery Time |
+| /delivery/deliveryTime/v2 | Future version |  |  |  |
+| /delivery/deliveryProcesses/v1 | Returns a list of delivery processes |  |  |  |
+| /delivery/deliveryProcesses/v1/deliveryId | Returns a specific delivery process | Create a specific delivery process | Update this delivery process' state 0) PREPARING, 1) ON_GOING 2) FINISHED 3) OTHER STATE |  |
 
 ![restaurant order and payment](https://cloud.githubusercontent.com/assets/17025949/25528059/1b4042ac-2c5f-11e7-9db6-3ee56c450916.jpg)
 
