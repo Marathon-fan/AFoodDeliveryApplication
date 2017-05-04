@@ -60,11 +60,11 @@ For the sake of simplicity, the data store and logic here are omitted.
 
 * microservices4 -- Restaurant Discovery(find and show all the restaurants)
 
-For the sake of simplicity, the data store and logic here are omitted.
+For the sake of simplicity, we don't list the RESTful States for microservices4.
 
 * microservices5 -- User(registration and login, logout)
 
-For the sake of simplicity, the data store and logic here are omitted.
+For the sake of simplicity, we don't list the RESTful States for microservices5.
 
 ![restaurant order and payment](https://cloud.githubusercontent.com/assets/17025949/25528059/1b4042ac-2c5f-11e7-9db6-3ee56c450916.jpg)
 
@@ -82,3 +82,10 @@ For the sake of simplicity, the data store and logic here are omitted.
 * microservices3(Delivery) calling other microservices 
 1. Once a delivery process is finished, microservices3(Delivery) will call microservices1(Customer Order) to update the original order's state to 'DELIVERED'.
 
+* microservices4 -- Restaurant Discovery(find and show all the restaurants)
+
+To make it simple, we don't list microservices4's calling other microservices.
+
+* microservices5 -- User(registration and login, logout)
+
+To make it simple, we don't list microservices5's calling other microservices.
