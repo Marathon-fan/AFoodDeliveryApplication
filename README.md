@@ -92,6 +92,11 @@ To make it simple, we don't list microservices4's calling other microservices.
 
 To make it simple, we don't list microservices5's calling other microservices.
 
+## 6 Logging and tracking(all the logging and tracking will be stored in Mongo DB)
+
+_Mongo DB_
+
+
 ## x Microservice Registration and Discovery
 
 _Spring Cloud and Netflix's Eureka_
