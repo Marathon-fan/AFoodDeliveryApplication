@@ -69,13 +69,16 @@ For the sake of simplicity, the data store and logic here are omitted.
 ![restaurant order and payment](https://cloud.githubusercontent.com/assets/17025949/25528059/1b4042ac-2c5f-11e7-9db6-3ee56c450916.jpg)
 
 
-## 5 Microservices calling each other
+## 5 Microservices calling each other(only critical calls are listed here)
 * microservices1(Customer Order) calling other microservices 
 
 1. Once an order is created, microservices1 will call microservices2(Payment) to finish the corresponding payment
 
 * microservices2(Payment) calling other microservices 
 
-1. Once a payment is successful, microservices2 will call microservices3(Delivery) to prepare food and deliver it  
-2. Once a payment is failed, microservices2 will call microservices1(Customer Order) to to handle payment error case. Here to make it simple, we change original OrderId's state to CANCELLED.(In reality, we may relaunch a payment logic)
+1. Once a payment is successful, microservices2 will call microservices3(Delivery) to prepare food and deliver it. Also, microservices2 will call microservices3(Delivery) to generate an estimated delivery time so that the customer knows how long possibly will be needed for the delivery process.  
+2. Once a payment is failed, microservices2 will call microservices1(Customer Order) to to handle payment error case. Here to make it simple, we change original OrderId's state to CANCELLED.(In practice, we may relaunch a payment logic)
+
+* microservices3(Delivery) calling other microservices 
+1. Once a delivery process is finished, microservices3(Delivery) will call microservices1(Customer Order) to update the original order's state to delivered.
 
