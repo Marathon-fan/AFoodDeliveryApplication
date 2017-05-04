@@ -49,6 +49,7 @@ For the sake of simplicity, the data store and logic here are omitted.
 | /payments/paymentId     | Returns a specific payment | Create a specific payment | Update this payment's state 0) PAYMENT_SUCCESS,1) PAYMENT_FAILURE 2) OTHER_STATE | Delete a specific payment |
 
 * microservices3 -- Delivery   
+
 | microservice3 resources | GET  | POST | PUT  | DELETE (delete) |
 |-----------------------------------------------|--------------------------------------------|:----------------------------------:|------------------------------------------------------------------------------------------|-------------------------------------------|
 | /delivery/estimatedDeliveryTime/v1 | Returns a list of estimated delivery time |  |  |  |
