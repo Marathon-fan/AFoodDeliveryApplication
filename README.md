@@ -71,7 +71,7 @@ For the sake of simplicity, we don't list the RESTful States for microservices5.
 
 ## 5 Microservices calling each other
 
-_(only critical calls are listed here. You can also see how we handle payment failure here)_ 
+_(only critical calls are listed here. You can also see how payment failure is dealt with here)_ 
 * microservices1(Customer Order) calling other microservices 
 
 1. Once an order is created, microservices1 will call microservices2(Payment) to finish the corresponding payment
@@ -92,15 +92,15 @@ To make it simple, we don't list microservices4's calling other microservices.
 
 To make it simple, we don't list microservices5's calling other microservices.
 
-## 6 Logging and tracking(all the logging and tracking will be stored in Mongo DB)
+## 6 Logging and tracking(Mongo DB)
 
-_Mongo DB_
+_All the logging and tracking will be stored in Mongo DB_
 
 
 ## x Microservice Registration and Discovery
 
-_Spring Cloud and Netflix's Eureka_
+_use Spring Cloud and Netflix's Eureka for Microservice Registration and Discovery_
 
 ## x Microservice fault tolerance
-_hystrix(circuit breaker)_
+_use hystrix(circuit breaker) for Microservice fault tolerance_
 
