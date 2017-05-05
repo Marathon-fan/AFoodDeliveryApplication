@@ -97,10 +97,10 @@ To make it simple, we don't list microservices5's calling other microservices.
 _All the logging and tracking will be stored in Mongo DB_
 
 
-## x Microservice Registration and Discovery
+## x Microservice Registration and Discovery(Spring Cloud and Netflix's Eureka)
 
 _use Spring Cloud and Netflix's Eureka for Microservice Registration and Discovery_
 
-## x Microservice fault tolerance
+## x Microservice fault tolerance(hystrix)
 _use hystrix(circuit breaker) for Microservice fault tolerance_
 
