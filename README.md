@@ -15,12 +15,14 @@ Users then needs to pay for his/her order by providing credit card number, expir
 After successful payment, it should return payment ID, timestamp and then the order is considered as completed so the user can see the estimated delivery time.
 
 ## 3 microservices
+_(You can see how message queue is utilized here.)_
 * microservices1 -- Customer Order(menu, make order)  
-User can see menu and order food.
+Show menu. Order food.
 * microservices2 -- Payment  
-Finish the payment.
+Microservice for payment and the payment could be successful or failed.
 * microservices3 -- Delivery  
-Prepare food and deliver food. Since this process(microservices3) is often slower than microservices1(customer order process)(for instance, when we order pizza, we always need to wait for pizza to be baked in the oven and delivered. In the peak hour, the deliver staff will be very busy),  we use a message queue to decouple and asynchronize them.
+Prepare food and deliver food.   
+Since this process(microservices3) is often slower than microservices1(customer order process)(for instance, when we order pizza, we always need to wait for pizza to be baked in the oven and delivered. In the peak hour, the deliver staff will be very busy),  we use a message queue to decouple and asynchronize them.
 * microservices4 -- Restaurant Discovery(find and show all the restaurants)   
 For the sake of simplicity, the data store and logic here are omitted.
 * microservices5 -- User(registration and login, logout)  
